@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Scoreboard - EAD Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Chaitanya Bharathi Institute of Technology</h1>
+            <h2>Cricket Scoreboard Web Application</h2>
+        </header>
+        
+        <div class="scoreboard">
+            <div class="team-score">
+                <div class="total-score" id="team-score">0/0</div>
+                <div class="overs" id="overs">0.0 Overs</div>
+            </div>
+            
+            <div class="players">
+                <div class="player" id="player-0">
+                    <div class="player-name">Rahul</div>
+                    <div class="player-score" id="score-0">0*</div>
+                </div>
+                <div class="player" id="player-1">
+                    <div class="player-name">Rohit</div>
+                    <div class="player-score" id="score-1">0</div>
+                </div>
+            </div>
+            
+            <div class="status" id="status-message"></div>
+        </div>
+        
+        <div class="buttons-container">
+            <button class="btn run-btn" data-event="run" data-value="0">Dot Ball</button>
+            <button class="btn run-btn" data-event="run" data-value="1">1 Run</button>
+            <button class="btn run-btn" data-event="run" data-value="2">2 Runs</button>
+            <button class="btn run-btn" data-event="run" data-value="3">3 Runs</button>
+            <button class="btn run-btn" data-event="run" data-value="4">4 Runs</button>
+            <button class="btn run-btn" data-event="run" data-value="6">6 Runs</button>
+            
+            <button class="btn wicket-btn" data-event="wicket">Wicket</button>
+            <button class="btn wicket-btn" data-event="lbw">LBW</button>
+            
+            <button class="btn extra-btn" data-event="wide">Wide</button>
+            <button class="btn extra-btn" data-event="noball">No Ball</button>
+            <button class="btn extra-btn" data-event="freehit">Free Hit</button>
+            <button class="btn extra-btn" data-event="bye">Bye</button>
+            <button class="btn extra-btn" data-event="legbye">Leg Bye</button>
+        </div>
+        
+        <div class="controls">
+            <button class="btn action-btn" id="switch-striker">Switch Striker</button>
+            <button class="btn action-btn" id="reset">Reset Match</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
